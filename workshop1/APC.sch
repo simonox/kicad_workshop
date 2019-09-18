@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:APC-cache
-EELAYER 30 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -372,33 +371,33 @@ Wire Wire Line
 	6150 2500 6150 2600
 Connection ~ 7750 3250
 Wire Wire Line
-	8100 3250 7750 3250
-NoConn ~ 8100 3650
+	8400 3250 7750 3250
+NoConn ~ 8400 3650
 Wire Wire Line
-	8450 3500 8250 3500
+	8100 3500 8250 3500
 $Comp
 L power:+9V #PWR0111
 U 1 1 5D838B33
-P 8450 3500
-F 0 "#PWR0111" H 8450 3350 50  0001 C CNN
-F 1 "+9V" V 8465 3628 50  0000 L CNN
-F 2 "" H 8450 3500 50  0001 C CNN
-F 3 "" H 8450 3500 50  0001 C CNN
-	1    8450 3500
-	0    1    1    0   
+P 8100 3500
+F 0 "#PWR0111" H 8100 3350 50  0001 C CNN
+F 1 "+9V" V 8115 3628 50  0000 L CNN
+F 2 "" H 8100 3500 50  0001 C CNN
+F 3 "" H 8100 3500 50  0001 C CNN
+	1    8100 3500
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	8100 3350 8100 3250
+	8400 3350 8400 3250
 $Comp
 L Device:R_POT RV2
 U 1 1 5D803438
-P 8100 3500
-F 0 "RV2" H 8030 3546 50  0000 R CNN
-F 1 "1M" H 8030 3455 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 8100 3500 50  0001 C CNN
-F 3 "~" H 8100 3500 50  0001 C CNN
-	1    8100 3500
-	1    0    0    -1  
+P 8400 3500
+F 0 "RV2" H 8330 3546 50  0000 R CNN
+F 1 "1M" H 8330 3455 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 8400 3500 50  0001 C CNN
+F 3 "~" H 8400 3500 50  0001 C CNN
+	1    8400 3500
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_POT RV3
@@ -423,8 +422,8 @@ F 3 "~" H 9050 3250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8850 3250 8100 3250
-Connection ~ 8100 3250
+	8850 3250 8400 3250
+Connection ~ 8400 3250
 $Comp
 L Connector:TestPoint TP4
 U 1 1 5D8BF642
@@ -437,6 +436,20 @@ F 3 "~" H 6300 3250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
+L power:+9V #PWR0109
+U 1 1 5D81EBEF
+P 6350 3000
+F 0 "#PWR0109" H 6350 2850 50  0001 C CNN
+F 1 "+9V" V 6365 3128 50  0000 L CNN
+F 2 "" H 6350 3000 50  0001 C CNN
+F 3 "" H 6350 3000 50  0001 C CNN
+	1    6350 3000
+	0    1    1    0   
+$EndComp
+NoConn ~ 6100 2850
+Wire Wire Line
+	3050 2650 3300 2650
+$Comp
 L Device:R_POT RV1
 U 1 1 5D80479C
 P 6100 3000
@@ -445,20 +458,52 @@ F 1 "1M" H 6030 2955 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 6100 3000 50  0001 C CNN
 F 3 "~" H 6100 3000 50  0001 C CNN
 	1    6100 3000
-	-1   0    0    1   
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3000 6250 3000
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5D82A873
+P 8400 5950
+F 0 "H2" H 8500 5996 50  0000 L CNN
+F 1 "MountingHole" H 8500 5905 50  0000 L CNN
+F 2 "" H 8400 5950 50  0001 C CNN
+F 3 "~" H 8400 5950 50  0001 C CNN
+	1    8400 5950
+	1    0    0    -1  
 $EndComp
 $Comp
-L power:+9V #PWR0109
-U 1 1 5D81EBEF
-P 5900 3000
-F 0 "#PWR0109" H 5900 2850 50  0001 C CNN
-F 1 "+9V" V 5915 3128 50  0000 L CNN
-F 2 "" H 5900 3000 50  0001 C CNN
-F 3 "" H 5900 3000 50  0001 C CNN
-	1    5900 3000
-	0    -1   -1   0   
+L Mechanical:MountingHole H3
+U 1 1 5D82B570
+P 9250 5950
+F 0 "H3" H 9350 5996 50  0000 L CNN
+F 1 "MountingHole" H 9350 5905 50  0000 L CNN
+F 2 "" H 9250 5950 50  0001 C CNN
+F 3 "~" H 9250 5950 50  0001 C CNN
+	1    9250 5950
+	1    0    0    -1  
 $EndComp
-NoConn ~ 6100 2850
-Wire Wire Line
-	3050 2650 3300 2650
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5D82B8FB
+P 10000 5950
+F 0 "H4" H 10100 5996 50  0000 L CNN
+F 1 "MountingHole" H 10100 5905 50  0000 L CNN
+F 2 "" H 10000 5950 50  0001 C CNN
+F 3 "~" H 10000 5950 50  0001 C CNN
+	1    10000 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5D82BC64
+P 7650 5950
+F 0 "H1" H 7750 5996 50  0000 L CNN
+F 1 "MountingHole" H 7750 5905 50  0000 L CNN
+F 2 "" H 7650 5950 50  0001 C CNN
+F 3 "~" H 7650 5950 50  0001 C CNN
+	1    7650 5950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
