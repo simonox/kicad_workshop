@@ -19,4 +19,4 @@ Bei zweiten Workshop wird aus dem Schaltplan, der in Teil 1 erstellt wurde, eine
 Bein dritten Termin dreht sich alles um die Erstellung von Produktionsdateien (Gerber, BOM, Pick&Place). Bei genügend Zeit wird noch das Anlegen eigener Symbole und Footprints erläutert.
 
 
-_Der Workshop läuft zur Zeit, Folien und Projektdateien für Teil 2 und 3 werden nach den entprechenden Workshop-Terminen hinzugefügt_
+_Der Workshop läuft zur Zeit, Folien und Projektdateien für Teil 3 werden nach dem Workshop-Termin hinzugefügt_
