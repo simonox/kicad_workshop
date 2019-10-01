@@ -33,6 +33,10 @@ F 0 "C1" V 5602 3900 50  0000 C CNN
 F 1 "10nF" V 5511 3900 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5388 3750 50  0001 C CNN
 F 3 "~" H 5350 3900 50  0001 C CNN
+F 4 "Mouser" H 5350 3900 50  0001 C CNN "Distributor"
+F 5 "Vishay / Vitramon" H 5350 3900 50  0001 C CNN "Manufacturer"
+F 6 "77-VJ0603V103ZXJPBC" H 5350 3900 50  0001 C CNN "Order Number"
+F 7 "VJ0603V103ZXJPW1BC" H 5350 3900 50  0001 C CNN "Part Number"
 	1    5350 3900
 	0    -1   -1   0   
 $EndComp
